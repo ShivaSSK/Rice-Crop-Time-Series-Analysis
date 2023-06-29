@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		body{
+			background:linear-gradient(#abecd6,#fbed96);
+		}
+		.main{
+			background-image: url("agrcc.jpg");
+			height: 650px;
+			background-size:cover;
+			background-repeat: no-repeat;
+			border-radius: 15px;
+
+		}
+		.one{
+			color:white;
+			font-family: Arial, Helvetica, sans-serif;
+			width:800px;
+			padding-top: 70px;
+			padding-left: 70px;
+		}
+		.bl{
+			font-size:100px;
+			font-weight: 700;
+			color:white;
+			text-shadow: 10px 10px 10px #666;
+		}
+		.on{
+			font-size: 40px;
+			color:black;
+			text-shadow: 5px 5px 10px #666;
+		}
+		fieldset{
+			margin: 0px 120px 0px 120px;
+			text-align: justify;
+		    border-width: 5px;
+			border-color: #ffcc66;
+			border-radius: 25px;
+		}
+		legend{
+			text-align: left;
+			font-size: 40px;
+			border-radius: 8px;
+			font-family: Arial, Helvetica, sans-serif;
+			color:#f8df3a;
+			-webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #f78c22;
+			//background:linear-gradient(#ccffff,#ffeb99);
+		}
+		
+		.cntnt a.dmy::first-letter{
+			color:pink;
+			//font-size:50px;
+		}
+		.cntnt{
+			margin : 0px 50px 0px 50px;
+			line-height: 23px;
+			//quotes:auto;
+			text-indent: 3em;
+			font-size:19px;
+		}
+		.fro{
+			text-align: center;
+		}
+		input[type="text"]{
+			height:25px;
+		}
+		.a,.b{
+			border: 2px;
+			border-radius: 8px;
+			background:#f78c22;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 23px;
+			color:white;
+			box-shadow:5px 5px 10px #999;
+
+		}
+		ol{
+			padding: 20px;
+		}
+		li{
+			display: inline-block;
+			text-decoration:none;
+			padding:15px;
+		}
+		.btn{
+			text-align: center;
+
+		}
+		button{
+			background:#339933;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 23px;
+			color:white;
+			padding:15px;
+			border-radius: 8px;
+			box-shadow:5px 5px 10px #999;
+		}
+		p.demo{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 23px;
+			color:white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="one">
+		<br><br/><a class="bl">Rice-Crop Monitoring</a><br/><br/>
+		<a class="on">Time Series Analysis</a><br/><br><br><br>
+		</div>
+	</div>
+	<br><br/><br/>
+	<div class="about">
+		<fieldset>
+			<legend><b>&nbsp;About : </b></legend>
+			<div class="cntnt" lang="en"><a class="dmy"><a style="font-size: 29px;font-style: none">R</a>ice crop monitoring and analysis involves the use of modern technologies and methods to track and analyze the growth, health, and yield of rice crops. This process includes the use of remote sensing tools, such as drones and satellites, to collect data on crop health, soil moisture, and other key metrics. Additionally, data analysis techniques are used to identify patterns, trends, and potential issues that may impact crop performance. This information can be used by farmers and other stakeholders to make informed decisions about irrigation, fertilization, and other crop management strategies. Ultimately, the goal of rice crop monitoring and analysis is to improve crop yields, reduce waste and environmental impact, and enhance food security for communities around the world.
+				<p>Rice is a staple food crop for different countries. The production of staple crop will reflect the situations prevailing in the country like famine or flood. This dataset captures production of rice ,along with unit of measure ( Tonnes) and collected data source ( official or estimated).</p></a><br/></div>
+		</fieldset>
+	</div><br/><br>
+	<div class="fro">
+		<ol>
+			<li class="a">
+				Enter Country Details Here : <input type="text">
+			</li>
+			<li style="text-indent: 158px"> </li>
+			<li></li>
+			<li></li>
+			<li class="b">
+				Enter year Details Here : <input type="text">
+			</li>			
+		</ol>
+	</div>
+	<div class="btn">
+	    <button onclick="myFunction()">Predict</button>
+	    <br/><br/>
+    <p id="demo" style="font-family: Arial, Helvetica, sans-serif;font-size: 23px;color:black;font-weight: 700;border-radius: 8px;"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Predicted rice crop production for India in 2023 : 183540380.0 tonnes";
+      }
+    </script>
+</div>
+<br/><br/><br/>
+</body>
+</html>
